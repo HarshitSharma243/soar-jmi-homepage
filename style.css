@@ -1,0 +1,406 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: #11101d;  
+}   
+ 
+.sidenav {
+    width: 220px;  
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    padding: 25px 15px;
+    background: #11131a;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.logobox {
+    width: 100%; 
+    height: auto; 
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+}
+
+.logo {
+    width: 70px;  
+    height: 60px; 
+    background-image: url('images/logo.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logoTxt {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.logoTxt span {
+    color: #c98142;
+}
+
+ 
+.navLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1rem;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navLinks a:hover {
+    color: #fff;
+    background: #1e222d;
+}
+
+
+.navLinks .joinBtn {
+    background: #c98142;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navLinks .joinBtn:hover {
+    background: #b37036;
+}
+.mainareabox {
+    margin-left: 220px; 
+    min-height: 100vh;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;  
+    gap: 40px;
+}
+.introSec {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 80px); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.introLeft {
+    flex: 1;
+ 
+    min-width: 0; 
+}
+
+.introRight {
+    background: #161922;
+    border: 1px solid #272d3d;
+    border-radius: 12px;
+    padding: 20px 30px;
+    width: 220px;  
+    flex-shrink: 0;  
+}
+
+.tagChip {
+    display: inline-block;
+    background: rgba(99,102,241,.15);
+    color: #818cf8;
+    border: 1px solid rgba(99,102,241,.3);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.introLeft h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.introLeft h1 span {
+    color: #c084fc;
+}
+
+.introPara {
+    color: #94a3b8;
+    font-size: 1rem;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+
+.statRow {
+    text-align: center;
+    padding: 12px 0px;
+    border-bottom: 1px solid #21263080;
+}
+
+.statRow:last-child {
+    border-bottom: none;
+}
+
+.statRow h3 {
+    font-size: 1.6rem;
+    color: #818cf8;
+}
+
+.statRow p {
+    font-size: .8rem;
+    color: #94a3b8;
+}
+
+.tagsRow {
+    padding: 22px 6%;
+    text-align: center;
+    border-bottom: 1px solid #1e293b;
+    border-top: 1px solid #1e293b;
+}
+
+.Tag {
+    display: inline-block;
+    background: #1a1d26;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: .85rem;
+    border: 1px solid #2a303f;
+    margin: 4px;
+    color: white;
+}
+
+
+.sectionGap {
+    padding: 65px 0px;
+}
+
+.darkSec {
+    background: #12151c;
+}
+
+.titleTxt {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.subTxt {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 40px;
+    font-size: .9rem;
+}
+.eventRow {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #161922;
+    border: 1px solid #232936;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.eventPic {
+    width: 260px;
+    height: 170px;
+    flex-shrink: 0;
+}
+
+.eventPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.eventTxt {
+    flex: 1;
+    padding: 20px 25px; 
+}
+
+.tinyTag {
+    font-size: .72rem;
+    text-transform: uppercase;
+    color: #818cf8;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.eventTxt h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.eventTxt p {
+    font-size: .85rem;
+    color: #94a3b8;
+}
+
+.teamList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.teamCard {
+    background: #1a1d26;
+    border: 1px solid #272d3d;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    width: calc(50% - 10px);
+}
+
+.avatarCircle {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 14px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #6366f1;
+}
+
+.avatarCircle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamCard h3 {
+    font-size: 1.05rem;
+    color: #fff;
+}
+
+.roleTxt {
+    font-size: .8rem;
+    color: #818cf8;
+    margin-bottom: 10px;
+}
+
+.quoteTxt {
+    font-size: .82rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+
+
+.aboutBox {
+    background: #161922;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #272d3d;
+}
+
+.aboutBox h2 {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.aboutBox > p {
+    color: #94a3b8;
+    margin-bottom: 22px;
+}
+.infoBlock {
+    border-left: 3px solid #6366f1;
+    padding-left: 15px;
+    margin-bottom: 18px;
+}
+
+.infoBlock:last-child {
+    margin-bottom: 0px;
+}
+
+.infoBlock h4 {
+    color: #818cf8;
+    margin-bottom: 5px;
+}
+
+.infoBlock p {
+    font-size: .9rem;
+    color: #94a3b8;
+}
+
+.joinBox {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.joinPara {
+    margin-bottom: 22px;
+}
+
+.photoWrap {
+    text-align: center;
+}
+
+.photoBox {
+    display: inline-block;
+    width: 18.5%;
+    height: 190px;
+    margin: 0.5%;
+    border-radius: 8px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.photoBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.photoBox img:hover {
+    transform: scale(1.05);
+}
+
+.siteFooter {
+    padding: 35px 0px;
+    background: #090a0d;
+    border-top: 1px solid #1e293b;
+    font-size: .85rem;
+    color: #64748b;
+}
+
+.footRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footAddr {
+    margin-top: 6px;
+}
